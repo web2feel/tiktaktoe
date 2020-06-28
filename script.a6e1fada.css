@@ -4201,7 +4201,7 @@ body {
   opacity: 0%;
 }
 .cross .block:hover:before {
-  opacity: 20%;
+  opacity: 40%;
   transition: 0.5s;
 }
 
@@ -4217,7 +4217,7 @@ body {
   opacity: 0%;
 }
 .circle .block:hover:before {
-  opacity: 20%;
+  opacity: 40%;
   transition: 0.5s;
 }
 
