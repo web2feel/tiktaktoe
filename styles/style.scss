@@ -1,0 +1,168 @@
+@import "animate.css/animate.css";
+
+body {
+  margin: 0;
+  background: #18191c;
+  background: radial-gradient(circle, #18191c 0%, #050505 100%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#header {
+  text-align: center;
+  h1 {
+    font-size: 42px;
+    color: #ddd;
+    text-shadow: 2px 2px 5px #000;
+    margin: 40px 0 0px;
+    font-weight: 700;
+  }
+  p {
+    color: #fff;
+    font-size: 18px;
+    margin: 0px;
+  }
+}
+
+#info {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 32px;
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+  }
+  .reset {
+    background: #fe6f00;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #fe6f00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+#content {
+  flex: 1 1 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.disabled {
+  pointer-events: none;
+}
+#board {
+  width: 330px;
+  height: 330px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px auto;
+  grid-gap: 10px;
+
+  .cross {
+    pointer-events: none;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      top: 20%;
+      height: 100%;
+      width: 100%;
+      background: url("../assets/cross.svg") no-repeat;
+      background-size: 60%;
+    }
+  }
+  .circle {
+    pointer-events: none;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      top: 20%;
+      height: 100%;
+      width: 100%;
+      background: url("../assets/circle.svg") no-repeat;
+      background-size: 60%;
+    }
+  }
+  .win {
+    background: green;
+    box-shadow: 0px 0px 5px #0ed10e;
+  }
+}
+
+.block {
+  cursor: pointer;
+  position: relative;
+  transition: all 500ms;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #111;
+  background: #22262b;
+}
+
+.cross {
+  .block {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 20%;
+      top: 20%;
+      height: 100%;
+      width: 100%;
+      background: url("../assets/cross.svg") no-repeat;
+      background-size: 60%;
+      opacity: 0%;
+    }
+    &:hover {
+      &:before {
+        opacity: 20%;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.circle {
+  .block {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 20%;
+      top: 20%;
+      height: 100%;
+      width: 100%;
+      background: url("../assets/circle.svg") no-repeat;
+      background-size: 60%;
+      opacity: 0%;
+    }
+    &:hover {
+      &:before {
+        opacity: 20%;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+#footer {
+  p {
+    text-align: center;
+    color: #777;
+    margin: 30px 0px;
+  }
+}

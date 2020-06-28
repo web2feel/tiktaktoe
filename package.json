@@ -1,0 +1,25 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage":"https://web2feel.github.io/tic-tac-toe",
+  "scripts": {
+    "deploy":"gh-pages -d dist",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.9"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "animate.min.css": "0.0.3",
+    "s": "^1.0.0"
+  }
+}
