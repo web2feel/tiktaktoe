@@ -34,7 +34,9 @@ function initBoard() {
     block.classList.remove("win");
     board.classList.remove("disabled");
     block.removeEventListener("click", handleClick);
+    block.removeEventListener('touchstart', handleClick)
     block.addEventListener("click", handleClick);
+    block.addEventListener('touchstart', handleClick)
   });
   setBoard();
 }
