@@ -1,0 +1,1 @@
+{"version":3,"sources":["scripts/script.js"],"names":["console","log"],"mappings":";;;AAEA,aAFA,QAAA,sBAEAA,QAAQC,IAAI","file":"script.e30040d6.js","sourceRoot":"..","sourcesContent":["import '/styles/style.scss'\n\nconsole.log(\"testing\");\n"]}
