@@ -4198,10 +4198,10 @@ body {
   width: 100%;
   background: url("/cross.095140ce.svg") no-repeat;
   background-size: 60%;
-  opacity: 0%;
+  opacity: 0;
 }
 .cross .block:hover:before {
-  opacity: 40%;
+  opacity: 0.4;
   transition: 0.5s;
 }
 
@@ -4214,10 +4214,10 @@ body {
   width: 100%;
   background: url("/circle.fad3d3f1.svg") no-repeat;
   background-size: 60%;
-  opacity: 0%;
+  opacity: 0;
 }
 .circle .block:hover:before {
-  opacity: 40%;
+  opacity: 0.4;
   transition: 0.5s;
 }
 
