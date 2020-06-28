@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage":"https://web2feel.github.io/tic-tac-toe",
+  "homepage":"https://web2feel.github.io/tiktaktoe",
   "scripts": {
     "deploy":"gh-pages -d dist",
     "dev": "parcel index.html",
